@@ -1,0 +1,22 @@
+{
+  "log_dir": "./logs",
+  "disk_mount": "/",
+  "cpu_threshold": 80,
+  "mem_threshold": 80,
+  "disk_threshold": 90,
+  "net_threshold_kbps": 10240,
+  "max_log_bytes": 5000000,
+  "backup_count": 3,
+  "smtp": {
+    "enabled": false,
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "security": "starttls",
+    "timeout_seconds": 15,
+    "sender_email": "your_email@example.com",
+    "receiver_email": "your_email@example.com",
+    "username": "your_email@example.com",
+    "password_env": "SYSMON_EMAIL_PASSWORD",
+    "subject_prefix": "[SysMon]"
+  }
+}
